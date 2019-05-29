@@ -14,8 +14,8 @@
         <p class="lead mt-4 mb-5">
           A 100% community organized developer conference with industry experts presenting on exciting topics!
         </p>
-        <a target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary btn-lg" rel="nofollow">Reserve Your Seat</a>
-        <a *ngIf="config?.speakerURL" target="_blank" rel="noopener" [href]="config?.speakerURL" class="btn btn-default btn-lg" rel="nofollow">Become A Speaker</a>
+        <a target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary btn-lg" rel="nofollow">參加者訂票</a>
+        <a *ngIf="config?.speakerURL" target="_blank" rel="noopener" [href]="config?.speakerURL" class="btn btn-default btn-lg" rel="nofollow">講者投稿</a>
       </div>
       <div class="arrow bounce">
         <a class="fa fa-chevron-down fa-1x" [ngx-scroll-to]="'#about'"></a>
@@ -27,7 +27,7 @@
 
 <div class="container" *ngIf="siteConfig$ | async as config">
   <div id="about" class="divider-new pt-5">
-    <h2 class="h2-responsive">About</h2>
+    <h2 class="h2-responsive">關於</h2>
   </div>
 
   <!--Section: About-->
@@ -95,7 +95,7 @@
   <!--Section: Featured Speakers-->
 
   <div class="divider-new" id="the-venue" *ngIf="config?.venueName">
-    <h2 class="h2-responsive">The Venue</h2>
+    <h2 class="h2-responsive">場地</h2>
   </div>
 
   <!--Section: The Venue-->
@@ -116,7 +116,7 @@
   <!--/Section: The Venue-->
 
   <div class="divider-new" *ngIf="config?.venueGeoData">
-    <h2 class="h2-responsive">Location</h2>
+    <h2 class="h2-responsive">地點</h2>
   </div>
 
   <!--Section: Location-->
@@ -154,7 +154,7 @@
   <!--Section: Location-->
 
   <div class="divider-new pt-5">
-    <h2 class="h2-responsive">Code of Conduct</h2>
+    <h2 class="h2-responsive">行為準則</h2>
   </div>
 
   <!--Section: CoC-->
@@ -170,7 +170,7 @@
   <!--Section: CoC-->
 
   <div class="divider-new pt-5" *ngIf="(tickets$ | async)?.length > 0">
-    <h2 class="h2-responsive">Pricing</h2>
+    <h2 class="h2-responsive">票價</h2>
   </div>
 
   <!--Section: Pricing-->
@@ -227,7 +227,7 @@
   <!--/Section: Pricing-->
 
   <div class="divider-new pt-5" *ngIf="(sponsors$ | async)?.length > 0">
-    <h2 class="h2-responsive">Sponsors</h2>
+    <h2 class="h2-responsive">贊助商</h2>
   </div>
 
   <!--Section: Sponsors-->
