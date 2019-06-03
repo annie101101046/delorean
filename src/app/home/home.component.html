@@ -76,7 +76,7 @@
   <!--Section: About-->
 
   <div class="divider-new pt-5" *ngIf="(speakers$ | async)?.length > 0">
-    <h2 class="h2-responsive">Featured Speakers</h2>
+    <h2 class="h2-responsive">特選講者</h2>
   </div>
 
   <!--Section: Featured Speakers-->
@@ -116,8 +116,8 @@
   <!--/Section: The Venue-->
 
   <div class="divider-new" *ngIf="config?.venueGeoData">
-    <h2 class="h2-responsive">地點</h2>
-  </div>
+    <h2 class="h2-responsive">場地</h2>
+  </div>map-container
 
   <!--Section: Location-->
   <section id="location pb-5" *ngIf="config?.venueGeoData">
@@ -227,13 +227,15 @@
   <!--/Section: Pricing-->
 
   <div class="divider-new pt-5" *ngIf="(sponsors$ | async)?.length > 0">
-    <h2 class="h2-responsive">贊助商</h2>
+    <h2 class="h2-responsive">贊助夥伴</h2>
   </div>
 
   <!--Section: Sponsors-->
   <section class="section" *ngIf="(sponsors$ | async)?.length > 0 && sponsors$ | async as sponsors">
     <div class="col sponsors">
-      <h4>We partner with some of the<br/>world's most innovative brands.</h4>
+      <h4>我們與具有創新性的品牌一起合作</h4><br>
+      <p>女人迷的使命是支持並啟發人們的成長，鼓勵性別的對話，為台灣首家以性別與女性意識為核心的國際媒體社群。</p>
+      <p>#CodeforGender 主旨在建立以人為核心、以科技為解方的性別友善生態圈，利用科技的力量，解決性別問題。</p>
       <a *ngIf="config?.sponsorURL" class="btn btn-primary waves-light" [href]="config?.sponsorURL" target="_blank" rel="noopener">Become a Sponsor</a>
     </div>
     <div class="col sponsors" *ngFor="let level of levels$ | async">
