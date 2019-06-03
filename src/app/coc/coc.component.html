@@ -5,107 +5,106 @@
   <!--Section: CoC-->
   <section class="section" *ngIf="siteConfig | async as siteConfig">
     <div>
-      <h1 class="section-heading">Code of Conduct</h1>
+      <h1 class="section-heading">行為準則</h1>
     </div>
     <div class="pt-1 pb-4">
-      <h4 class="font-weight-bold">Anti-harassment Policy</h4>
+      <h4 class="font-weight-bold">反騷擾政策</h4>
       <h5>
-        {{ siteConfig?.eventName }} is dedicated to providing a fun harassment-free conference experience for everyone,
-        regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, socioeconomic
-        status, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language
-        and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may
-        be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.
+        {{ siteConfig?.groupName }} 致力於為每個人提供有趣且無騷擾的會議體驗，
+        這些騷擾包含：性別、性別認同、性取向、殘疾、外貌、體型、種族、社會經濟狀況或宗教（或缺乏）。
+        我們絕不容忍參加者受到任何形式的騷擾。會議場所不允許性暗示或圖像的出現。
+        違反這些規則的參加者可能會受到製裁或驅逐出會議。
       </h5>
     </div>
     <div class="pt-1 pb-4">
-      <h4 class="font-weight-bold">Important Contacts</h4>
+      <h4 class="font-weight-bold">重要聯繫方式</h4>
       <p>
-        Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or
-        otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
+        會議工作人員將很樂意幫助參加者聯繫場地安全或當地執法部門，提供護送，或以其他方式幫助遭受騷擾的人在會議期間感到安全。
+        我們重視您的出席。
       </p>
-      <p class="font-weight-bold">If your physical safety or the physical safety of others is at risk, please dial 911 immediately.</p>
-      <p *ngIf="siteConfig?.eventReportEmail">Code of Conduct Team: <a href="mailto:{{ siteConfig?.eventReportEmail }}?subject=CoC Alert - {{ siteConfig?.eventName }}">{{ siteConfig?.eventReportEmail }}</a></p>
-      <p>{{ siteConfig?.eventName }} Organizers: <a href="mailto:{{ siteConfig?.eventEmail }}?subject=CoC Alert - {{ siteConfig?.eventName }}">{{ siteConfig?.eventEmail }}</a></p>
-      <p><a href="https://www.rainn.org/" target="_blank" rel="noopener">RAINN</a> Sexual Assault Crisis Line/Victims Crisis Line (24 hours): <a href="tel:800.656.4673">800.656.4673</a></p>
+      <p class="font-weight-bold">如果您的人身安全或他人身體安全受到威脅，請立即撥打110。</p>
+      <p *ngIf="siteConfig?.eventReportEmail">行為準則團隊 : <a href="mailto:{{ siteConfig?.eventReportEmail }}?subject=CoC Alert - {{ siteConfig?.eventName }}"> {{ siteConfig?.groupName }} </a></p>
+      <p>{{ siteConfig?.eventName }} 主辦單位 : <a href="mailto:{{ siteConfig?.eventEmail }}?subject=CoC Alert - {{ siteConfig?.eventName }}"> {{ siteConfig?.groupName }} </a></p>
+      <p><a href="https://www.mohw.gov.tw/cp-88-232-1-42.html" target="_blank" rel="noopener">性騷擾防治-衛生福利部</a> 性騷擾諮詢專線(24小時) : <a href="tel:113">113</a></p>
     </div>
     <div class="pt-1 pb-4">
-      <h4 class="font-weight-bold">Full Code of Conduct</h4>
+      <h4 class="font-weight-bold">完整行為準則</h4>
       <p>
-        To make clear what is expected, all attendees, speakers, exhibitors, organizers and volunteers at {{ siteConfig?.eventName }}
-        are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event.
+        為了確保大家有一致認同的共識， {{ siteConfig?.eventName }} 的所有參加者、講者、贊助夥伴、主辦單位和志工必須遵守以下行為準則。
+        主辦單位將在整個活動中強制執行此行為準則。
       </p>
       <p>
-        {{ siteConfig?.eventName }} is dedicated to providing a fun harassment-free conference experience for everyone,
-        regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, socioeconomic
-        status, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language
-        and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may
-        be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.
+        {{ siteConfig?.groupName }} 致力於為每個人提供有趣且無騷擾的會議體驗，
+        這些騷擾包含：性別、性別認同、性取向、殘疾、外貌、體型、種族、社會經濟狀況或宗教（或缺乏）。
+        我們絕不容忍參加者受到任何形式的騷擾。會議場所不允許性暗示或圖像的出現。
+        違反這些規則的參加者可能會受到製裁或驅逐出會議。
       </p>
       <div>
-        Harassment includes, but is not limited to:
+        騷擾包括但不限於：
         <ul>
           <li>
-            Verbal comments that reinforce social structures of domination related to gender, gender identity, sexual orientation, disability, physical
-            appearance, body size, race, socioeconomic status, or religion (or lack thereof)
+            口頭評論強調與性別，性別認同，性取向，殘疾，外表，體型，種族，社會經濟地位或宗教（或缺乏）
           </li>
-          <li>Sexual images in public spaces</li>
-          <li>Deliberate intimidation, stalking, or following</li>
-          <li>Harassing photography or recording</li>
-          <li>Sustained disruption of talks or other events</li>
-          <li>Inappropriate physical contact</li>
-          <li>Unwelcome sexual attention</li>
-          <li>Advocating for, or encouraging, any of the above behavior</li>
+          <li>在公共場合出現含有性意味的圖像</li>
+          <li>故意恐嚇，跟踪或跟踪</li>
+          <li>騷擾攝影或錄音</li>
+          <li>持續打斷會議或其他活動</li>
+          <li>不適當的肢體接觸</li>
+          <li>不受歡迎的性關注</li>
+          <li>倡導或鼓勵上述任何行為</li>
         </ul>
       </div>
     </div>
     <div class="pt-1 pb-4">
-      <h5 class="font-weight-bold">Enforcement</h5>
-      <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+      <h5 class="font-weight-bold">強制遵守</h5>
+      <p>參加者被要求停止任何騷擾行為時，應立即遵守。</p>
       <p>
-        Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors
-        should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes,
-        or otherwise create a sexualized environment.
+        展覽者、贊助夥伴、供應商展位或類似活動的參展商也必須遵守反騷擾政策。
+        特別是，參展商不應使用性意涵的圖像、活動或其他材料。
+        展位工作人員（包括志工）不應使用性服裝/制服/服裝或以其他方式製造性意涵的環境。
       </p>
       <p>
-        If a participant engages in harassing behaviour, event organizers retain the right to take any actions to keep the event a welcoming environment for all
-        participants. This includes warning the offender or expulsion from the conference with no refund.
+        如果參加者參與騷擾行為，活動主辦單位保留採取任何行動的權利，以使活動成為歡迎所有參加者的環境。
+        這包括警告或移除會員資格。
       </p>
-      <p>Event organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants.</p>
-      <p>We expect participants to follow these rules at all event venues and event-related social activities. We think people should follow these rules outside event activities too!</p>
+      <p>活動主辦單位可以採取行動糾正任何旨在破壞事件或使環境對任何參加者產生敵意的明顯影響。</p>
+      <p>我們希望參加者在所有活動場所和與活動相關的社交活動中遵循這些規則。 我們認為人們也應該在活動開始之外遵循這些規則！</p>
     </div>
     <div class="pt-1 pb-4">
-      <h5 class="font-weight-bold">Reporting</h5>
+      <h5 class="font-weight-bold">反映</h5>
       <p>
-          If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. Harassment and other code of conduct violations reduce the value of our event
-          for everyone. We want you to be happy at our event. People like you make our event a better place.
+        如果有人讓您或其他任何人感到不安全或不受歡迎，請盡快告訴我們。
+        騷擾和其他違反行為準則會降低我們每個人的活動價值。
+        我們希望您在我們的活動中感到快樂。
+        你讓我們的活動變得更美好。
       </p>
-      <p *ngIf="siteConfig?.eventAnonReport">You can make a report either personally or anonymously.</p>
+      <p *ngIf="siteConfig?.eventAnonReport">您可以親自或匿名反映。</p>
     </div>
     <div class="pt-1 pb-4" *ngIf="siteConfig?.eventAnonReport">
-      <h5 class="font-weight-bold">Anonymous Report</h5>
-      <p>You can make an anonymous report here: <a href="{{ siteConfig?.eventAnonReport }}" target="_blank" rel="noopener">{{ siteConfig?.eventAnonReport }}</a></p>
-      <p>We can't follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.</p>
+      <h5 class="font-weight-bold">匿名反映</h5>
+      <p>您可以在這裡提出匿名反映 : <a href="{{ siteConfig?.eventAnonReport }}" target="_blank" rel="noopener">匿名反映騷擾表單</a></p>
+      <p>我們無法直接跟踪您的匿名報告，但我們會對其進行全面調查並採取一切必要措施來防止再次發生。</p>
     </div>
     <div class="pt-1 pb-4">
-      <h5 class="font-weight-bold">Personal Report</h5>
-      <p>You can make a personal report by contacting a {{ siteConfig?.eventName }} staff member.</p>
+      <h5 class="font-weight-bold">個人反映</h5>
+      <p>你可以聯繫 {{ siteConfig?.eventName }} 主辦單位進行個人反映</p>
       <p>
-        When taking a personal report, our staff will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe,
-        we'll ask you to tell us about what happened. This can be upsetting, but we'll handle it as respectfully as possible, and you can bring someone to support you. You won't be asked
-        to confront anyone and we won't tell anyone who you are.
+        在接受個人反映時，我們的工作人員將確保您的安全，不會被無意中聽到。為了確保您的反映得到妥善處理，可能涉及其他活動工作人員。
+        一旦安全，我們會要求您告訴我們發生了什麼事。這可能令人心煩，但我們會盡可能謹慎地處理它，你可以帶人來支持你。
+        你不會被要求與任何人對抗，我們不會告訴任何人你是誰。
       </p>
       <p>
-        Our team will be happy to help you contact venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration
-        of the event. We value your attendance.
+        我們的團隊將很樂意幫助您聯繫場地安全，執法單位以及其他服務單位，提供護送，或以其他方式幫助您在活動期間感到安全。
+        我們重視您的出席。
       </p>
     </div>
     <div class="pt-1 pb-4">
-      <h4 class="font-weight-bold">License</h4>
+      <h4 class="font-weight-bold">授權</h4>
       <p>
-        This Code of Conduct was forked from the example policy from the <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy" target="_blank" rel="noopener">Geek Feminism wiki</a>,
-        created by the Ada Initiative and other volunteers. which is under a Creative Commons Zero license.
+        本行為準則是從 <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy" target="_blank" rel="noopener">Geek Feminism wiki</a> 所分支出來，
+        由 Ada Initiative 以及其他志工所建立，授權方式採 Creative Commons Zero license
       </p>
-      <p>Conference Code of Conduct by {{ siteConfig?.eventName }} is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">Creative Commons Attribution 3.0 Unported License</a>.</p>
+      <p> {{ siteConfig?.groupName }} 的行為準則的授權方式採 <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">Creative Commons Attribution 3.0 Unported License</a>.</p>
     </div>
   </section>
   <!--Section: Coc-->
