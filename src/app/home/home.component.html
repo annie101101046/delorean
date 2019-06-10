@@ -215,7 +215,7 @@
                 &nbsp;
               </span>
               <div class="text-center ticket-button">
-                <a target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary waves-light" rel="nofollow">Buy Ticket</a>
+                <a target="_blank" rel="noopener" [href]="config?.ticketURL" class="btn btn-primary waves-light" rel="nofollow">訂票</a>
               </div>
             </div>
           </div>
@@ -236,7 +236,7 @@
       <h4>我們與具有創新性的品牌一起合作</h4><br>
       <p>女人迷的使命是支持並啟發人們的成長，鼓勵性別的對話，為台灣首家以性別與女性意識為核心的國際媒體社群。</p>
       <p>#CodeforGender 主旨在建立以人為核心、以科技為解方的性別友善生態圈，利用科技的力量，解決性別問題。</p>
-      <a *ngIf="config?.sponsorURL" class="btn btn-primary waves-light" [href]="config?.sponsorURL" target="_blank" rel="noopener">Become a Sponsor</a>
+      <a *ngIf="config?.sponsorURL" class="btn btn-primary waves-light" [href]="config?.sponsorURL" target="_blank" rel="noopener">成為贊助夥伴</a>
     </div>
     <div class="col sponsors" *ngFor="let level of levels$ | async">
       <h3 style="font-weight: bold;">
