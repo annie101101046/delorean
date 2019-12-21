@@ -12,7 +12,7 @@ import { ModalDirective } from 'angular-bootstrap-md';
   styleUrls: ['./speaker-list.component.scss']
 })
 export class SpeakerListComponent implements OnInit {
-  @ViewChild('speakerModal') public speakerModal: ModalDirective;
+  @ViewChild('speakerModal', { static: true }) public speakerModal: ModalDirective;
 
   public speakers: FirebaseListObservable<Speaker[]>;
   public speakerDetail: any;

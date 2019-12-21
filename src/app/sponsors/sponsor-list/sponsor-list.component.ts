@@ -22,7 +22,7 @@ export class SponsorListComponent implements OnInit {
   level: Level = new Level();
   siteConfig: FirebaseObjectObservable<SiteConfig>;
 
-  @ViewChild('levelModal') public levelModal: ModalDirective;
+  @ViewChild('levelModal', { static: true }) public levelModal: ModalDirective;
 
   constructor(
     private sponsorService: SponsorService,

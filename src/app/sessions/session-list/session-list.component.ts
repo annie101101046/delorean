@@ -20,7 +20,7 @@ export class SessionListComponent implements OnInit {
   public sections: FirebaseListObservable<Section[]>;
   section: Section = new Section();
 
-  @ViewChild('sectionModal') public sectionModal: ModalDirective;
+  @ViewChild('sectionModal', { static: true }) public sectionModal: ModalDirective;
 
   constructor(
     private sessionService: SessionService,

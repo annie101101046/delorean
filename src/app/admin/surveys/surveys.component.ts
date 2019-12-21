@@ -17,7 +17,7 @@ export class SurveysComponent implements OnInit {
   public surveyDetail: any;
   surveyData: any[] = [];
 
-  @ViewChild('surveyModal') public surveyModal: ModalDirective;
+  @ViewChild('surveyModal', { static: true }) public surveyModal: ModalDirective;
 
   constructor(private sessionService: SessionService) { }
 
