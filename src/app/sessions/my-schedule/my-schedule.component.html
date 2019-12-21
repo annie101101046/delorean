@@ -6,11 +6,11 @@
   <section class="section">
     <div class="d-print-none">
       <div class="pull-right" style="margin-top: -45px;">
-        <a href="javascript:window.print();" title="Print Schedule"><i class="fa fa-print" aria-hidden="true"></i> Print Schedule</a>
+        <a href="javascript:window.print();" title="Print Schedule"><i class="fa fa-print" aria-hidden="true"></i> 列印議程</a>
       </div>
-      <h1 class="section-heading">My Schedule</h1>
+      <h1 class="section-heading">我的議程</h1>
       <div class="text-center">
-        <button type="button" class="btn btn-primary" routerLink="/sessions">View Full Schedule</button>
+        <button type="button" class="btn btn-primary" routerLink="/sessions">查看所有議程</button>
       </div>
     </div>
     <div *ngIf="(mySessions$ | async)?.length !== 0 && mySessions$ | async as mySessions" class="table-responsive">
@@ -40,10 +40,10 @@
       </table>
     </div>
     <div class="text-center" *ngIf="(sessions$ | async)?.length !== 0 && (mySessions$ | async)?.length === 0">
-      <h5>You haven't added any sessions yet! Go back to the <a routerLink="/sessions">Schedule</a> and add some!</h5>
+      <h5>你還沒有挑選任何議程，去<a routerLink="/sessions">議程表</a>看看吧！</h5>
     </div>
     <div class="text-center" *ngIf="(sessions$ | async)?.length === 0">
-      <h5>Stay tuned! Once sessions have been added, you can create your own schedule and view it here!</h5>
+      <h5>記得回來! 等我們增加議程後，你可以挑選有興趣的議程，規劃並檢視屬於自己的行程喔!</h5>
     </div>
   </section>
   <!--Section: Schedule-->

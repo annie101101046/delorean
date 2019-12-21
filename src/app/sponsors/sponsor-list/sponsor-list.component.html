@@ -5,13 +5,15 @@
   <!--Section: Sponsors-->
   <section class="section pb-3">
     <!--Section heading-->
-    <h1 class="section-heading">Our Sponsors</h1>
+    <h1 class="section-heading">我們的贊助夥伴</h1>
     <div class="text-center" *ngIf="isLoggedIn() && isAdmin()">
       <button class="btn btn-success" (click)="levelModal.show()">Create Level</button>
       <button class="btn btn-primary" routerLink="/sponsors/new">Create Sponsor</button>
     </div>
     <div class="col sponsors">
-      <h4>We partner with some of the<br/>world's most innovative brands.</h4>
+      <h4>我們與具有創新性的品牌一起合作</h4><br>
+      <p>女人迷創立於 2011 年，我們的使命是支持並啟發人們的成長，鼓勵性別的對話，為台灣首家以性別與女性意識為核心的國際媒體社群。致力於梳理女性故事，傳承女性經驗，採集多元觀點，進而推動性別啟蒙運動，引領台灣女力和性別運動的蓬勃發展。</p>
+      <p>#CodeforGender 是一個全球性的行動，由女人迷發起，主旨在於建立以人為核心、以科技為解方的性別友善生態圈，利用科技、多元的力量，解決時下的性別議題。</p>
       <a class="btn btn-primary waves-light" [href]="(siteConfig | async)?.sponsorURL" target="_blank" rel="noopener">Become a Sponsor</a>
     </div>
     <div class="col sponsors" *ngFor="let level of levels | async">

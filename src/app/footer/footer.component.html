@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">About {{ config?.groupName }}</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">關於 {{ config?.groupName }}</h5>
         <!--Social buttons-->
         <div class="social-section mb-3">
           <ul>
@@ -18,32 +18,34 @@
           </ul>
         </div>
         <!--/.Social buttons-->
-        <p>We are a technology user group that meets regularly to discuss the latest Google Technologies, Tools, SDKs, APIs, and much more.</p>
-        <p><small><strong>Disclaimer:</strong>&nbsp;<em>{{ config?.groupName }} is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.</em></small></p>
+        <p>我們是一群技術愛好者，常聚在一起討論 Google 最新的技術、工具、SDK、API 以及許多許多</p>
+        <p><small><strong>聲明 : </strong>&nbsp;<em>{{ config?.groupName }} 是獨立的社群；我們的活動以及想法都跟 Google 這個公司無關</em></small></p>
       </div>
       <hr class="w-100 clearfix d-sm-none">
       <div class="col-lg-2 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">Links</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">連結</h5>
         <ul>
           <li><a [href]="config?.groupWebsite" target="_blank" rel="noopener">{{ config?.groupName }}</a></li>
+          <li><a href="https://www.facebook.com/groups/WTMTaipei/" target="_blank" rel="noopener"> Women Techmakers 台北 </a></li>
           <li><a href="https://developers.google.com/" target="_blank" rel="noopener">Google Developers</a></li>
           <li><a href="https://www.womentechmakers.com/" target="_blank" rel="noopener">Women Techmakers</a></li>
         </ul>
       </div>
       <hr class="w-100 clearfix d-sm-none">
       <div class="col-lg-2 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">Contact</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">聯絡</h5>
         <ul>
           <li><a href="mailto:{{ config?.eventEmail }}" target="_blank" rel="noopener">{{ config?.eventEmail }}</a></li>
+          <li><a href="mailto:wtm@gdg-taipei.org" target="_blank" rel="noopener">wtm@gdg-taipei.org</a></li>
           <li *ngIf="config?.eventTwitter"><a href="https://twitter.com/intent/tweet?text=@{{ config?.eventTwitter }}" target="_blank" rel="noopener">@{{ config?.eventTwitter }}</a></li>
           <li *ngIf="config?.twitterLink"><a href="https://twitter.com/intent/tweet?text=@{{ config?.twitterLink }}" target="_blank" rel="noopener">@{{ config?.twitterLink }}</a></li>
         </ul>
       </div>
       <hr class="w-100 clearfix d-sm-none">
       <div class="col-lg-2 col-md-6 ml-auto">
-        <h5 class="title font-weight-bold mt-3 mb-4">FAQ</h5>
+        <h5 class="title font-weight-bold mt-3 mb-4">問與答</h5>
         <ul>
-          <li><a routerLink="/code-of-conduct">Code of Conduct</a></li>
+          <li><a routerLink="/code-of-conduct">行為準則</a></li>
           <li><a href="https://meetup.com/pro/gdg" target="_blank" rel="noopener">Google Developer Groups</a></li>
           <li><a href="https://developers.google.com/events/devfest/" target="_blank" rel="noopener">GDG DevFest Season</a></li>
         </ul>
